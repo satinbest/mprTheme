@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'arad';
+    src: url('./assets/fonts/arad.woff2') format('woff2');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    --red-color: #f93423;
+    --font-family: 'arad';
+}
+
+body {
+    direction: rtl;
+    font-size: 14px;
+    text-align: right;
+    color: #303030;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    color: #7e7e7e;
+    font-size: 13px;
+    font-weight: 350;
+}
+
+.top-header .t-h-left .contact-header {
+    color: #f93423;
+    padding-right: 20px;
+    font-weight: 450;
+}
+
+.top-header .t-h-left .contact-header i {
+    font-size: 18px;
+    padding-right: 6px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.main-header .m-h-right {
+    display: flex;
+    width: 57%;
+    align-items: center;
+}
+
+.main-header .m-h-right .logo {
+    max-width: 130px;
+}
+
+.main-header .m-h-right .logo a {
+    display: flex;
+}
+
+.main-header .m-h-right .logo a img {
+    max-width: 100%;
+}
+
+.main-header .m-h-right .search-main {
+    width: 100%;
+    margin-right: 71px;
+}
+
+.main-header .m-h-right .search-main form {
+    position: relative;
+    border: none;
+}
+
+.main-header .m-h-right .search-main form input[type="search"] {
+    background-color: #f3f4f6;
+    border-radius: 7px;
+    font-family: var(--font-family);
+    font-size: 13px;
+    padding: 15px 50px 15px 15px;
+    width: 100%;
+    border: none;
+}
+
+.main-header .m-h-right .search-main form button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #a0a0a0;
+    border: none;
+    cursor: pointer;
+}
+.main-header .m-h-left {}
+
+.main-header .m-h-left .cart-btn-header {}
+
+.main-header .m-h-left .cart-btn-header a {}
+
+.main-header .m-h-left .cart-btn-header a .cart-btn-text {}
+
+.main-header .m-h-left .cart-btn-header a .cart-btn-num {}
+
+.m-h-left .favorite-btn-header {}
+
+.m-h-left .favorite-btn-header a {}
+
+.m-h-left .favorite-btn-header a i {}
