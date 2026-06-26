@@ -14,14 +14,17 @@
 
 :root {
     --red-color: #f93423;
+    --text-color: #303030;
+    --white_color:#fff;
     --font-family: 'arad';
+    --green-color:#1BD2A3;
 }
 
 body {
     direction: rtl;
     font-size: 14px;
     text-align: right;
-    color: #303030;
+    color: var(--text-color);
     font-family: var(--font-family);
     font-weight: 400;
 }
@@ -42,7 +45,7 @@ body {
 }
 
 .top-header .t-h-left .contact-header {
-    color: #f93423;
+    color: var(--red-color);
     padding-right: 20px;
     font-weight: 450;
 }
@@ -106,18 +109,45 @@ body {
     border: none;
     cursor: pointer;
 }
-.main-header .m-h-left {}
+.main-header .m-h-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
 
 .main-header .m-h-left .cart-btn-header {}
 
-.main-header .m-h-left .cart-btn-header a {}
+.main-header .m-h-left .cart-btn-header a {
+    background-color:var(--green-color) ;
+    color: var(--white_color);
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 7px;
+    display: flex;
+}
 
-.main-header .m-h-left .cart-btn-header a .cart-btn-text {}
+.main-header .m-h-left .cart-btn-header a .cart-btn-text {
+    font-weight: 450;
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+    margin-left: 15px;
+}
 
 .main-header .m-h-left .cart-btn-header a .cart-btn-num {}
 
 .m-h-left .favorite-btn-header {}
 
-.m-h-left .favorite-btn-header a {}
+.m-h-left .favorite-btn-header a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 7px;
+    display: flex;
+    border: 1PX solid #7e7e7e;
+}
 
-.m-h-left .favorite-btn-header a i {}
+.m-h-left .favorite-btn-header a i {
+    font-size: 20px;
+    margin-left: 8px;
+}
