@@ -1,0 +1,6 @@
+# VS Code
+.vscode/
+# JetBrains (PhpStorm, WebStorm, IntelliJ)
+.idea/
+# Visual Studio
+.vs/
