@@ -15,9 +15,9 @@
 :root {
     --red-color: #f93423;
     --text-color: #303030;
-    --white_color:#fff;
+    --white_color: #fff;
     --font-family: 'arad';
-    --green-color:#1BD2A3;
+    --green-color: #1BD2A3;
 }
 
 body {
@@ -109,6 +109,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 .main-header .m-h-left {
     display: flex;
     align-items: center;
@@ -116,10 +117,8 @@ body {
 
 }
 
-.main-header .m-h-left .cart-btn-header {}
-
 .main-header .m-h-left .cart-btn-header a {
-    background-color:var(--green-color) ;
+    background-color: var(--green-color);
     color: var(--white_color);
     text-decoration: none;
     padding: 14px;
@@ -134,10 +133,6 @@ body {
     margin-left: 15px;
 }
 
-.main-header .m-h-left .cart-btn-header a .cart-btn-num {}
-
-.m-h-left .favorite-btn-header {}
-
 .m-h-left .favorite-btn-header a {
     color: var(--text-color);
     text-decoration: none;
@@ -150,4 +145,49 @@ body {
 .m-h-left .favorite-btn-header a i {
     font-size: 20px;
     margin-left: 8px;
+}
+
+.down-header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px 0px #0000000d;
+    padding: 14px 0;
+    margin-top: 8px;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu .megamenu-box {
+    border-left: 1px dotted #333;
+    padding-left: 20px;
+    margin-left: 9px;
+}
+
+.megamenu-box .t-m {
+    color: #161A1D;
+    font-weight: 450;
+}
+
+.main-menu .menu-header ul li {
+    display: inline-block;
+    margin: 0 11px;
+}
+
+.main-menu .menu-header ul li a {
+    text-decoration: none;
+    color: #7e7e7e;
+    font-weight: 350;
+}
+
+.register-btn {
+    color: #161A1DE7;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.register-btn i {
+    font-size: 20px;
 }
