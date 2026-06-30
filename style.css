@@ -17,6 +17,7 @@
     --white_color: #fff;
     --font-family: 'arad';
     --green-color: #1BD2A3;
+    --border-color: #ddd;
 }
 
 body {
@@ -206,7 +207,7 @@ li {
     top: 25px;
     right: 0;
     background-color: var(--white_color);
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     padding: 7px 0;
     width: 200px;
     visibility: hidden;
@@ -236,4 +237,101 @@ li {
 
 .register-btn i {
     font-size: 20px;
+}
+
+.hm-mega-menu {
+    position: relative;
+}
+
+.hm-mega-menu>ul::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: -20px;
+}
+
+.hm-mega-menu>ul {
+    position: absolute;
+    background-color: var(--white_color);
+    border: 1px solid var(--border-color);
+    top: 25px;
+    right: 0;
+    width: 222px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-menu .megamenu-box:hover>.hm-mega-menu>ul {
+    visibility: visible;
+    opacity: 1;
+    top: 16px;
+}
+
+.hm-mega-menu>ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hm-mega-menu>ul>li:hover {
+    background-color: #f7f7f8;
+}
+
+.hm-mega-menu>ul>li:hover>a,
+.hm-mega-menu>ul>li:hover>i {
+    color: var(--red-color)
+}
+
+.hm-mega-menu>ul>li>a {
+    padding: 12px;
+    font-weight: 500;
+}
+
+.hm-mega-menu>ul>li>i {
+    margin-left: 12px;
+    font-size: 9px;
+}
+
+.hm-mega-menu>ul>li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hm-mega-menu>ul>li>ul {
+    position: absolute;
+    background-color: var(--white_color);
+    border: 1px solid var(--border-color);
+    top: 0;
+    right: 100%;
+    width: 1215px;
+    height: 100%;
+    display: flex;
+    padding: 12px;
+    border-right: 2px solid var(--border-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.hm-mega-menu>ul>li>ul>li {
+    width: 25%;
+}
+
+.hm-mega-menu>ul>li>ul>li>a {
+    font-weight: 550;
+    color: #000;
+    border-right: 3px solid var(--red-color);
+    padding-right: 5px;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+.hm-mega-menu>ul>li>ul>li>ul li a {
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px 0;
+    display: block;
 }
