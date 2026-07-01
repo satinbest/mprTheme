@@ -18,6 +18,7 @@
     --font-family: 'arad';
     --green-color: #1BD2A3;
     --border-color: #ddd;
+    --black-color: #000;
 }
 
 body {
@@ -144,7 +145,7 @@ li {
 
 .main-header .m-h-left .cart-btn-header a .cart-btn-text {
     font-weight: 450;
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--white_color);
     padding-left: 15px;
     margin-left: 15px;
 }
@@ -213,6 +214,7 @@ li {
     visibility: hidden;
     opacity: 0;
     transition: all 0.2s ease-in-out;
+    z-index: 99;
 }
 
 .main-menu .menu-header>ul>li:hover>ul {
@@ -225,6 +227,12 @@ li {
     padding: 7px 14px;
     display: block;
     font-size: 13px;
+
+}
+
+.main-menu .menu-header ul li ul li a:hover {
+    color: var(--red-color);
+    font-weight: 450;
 }
 
 .register-btn {
@@ -261,6 +269,7 @@ li {
     visibility: hidden;
     opacity: 0;
     transition: all 0.2s ease-in-out;
+    z-index: 99;
 }
 
 .main-menu .megamenu-box:hover>.hm-mega-menu>ul {
@@ -321,7 +330,7 @@ li {
 
 .hm-mega-menu>ul>li>ul>li>a {
     font-weight: 550;
-    color: #000;
+    color: var(--black-color);
     border-right: 3px solid var(--red-color);
     padding-right: 5px;
     margin-bottom: 7px;
@@ -334,4 +343,70 @@ li {
     font-weight: 400;
     padding: 4px 0;
     display: block;
+}
+
+.hm-mega-menu>ul>li>ul>li>ul li a:hover {
+    color: var(--red-color);
+    font-weight: 450;
+}
+
+/* slider style */
+.main-slider .owl-stage-outer {
+    border-radius: 15px;
+}
+
+.main-slider .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.main-slider .owl-theme .owl-dots {
+    width: 100%;
+}
+
+.main-slider .owl-theme .owl-dots button.owl-dot span {
+    background-color: var(--black-color);
+    opacity: 0.3;
+    width: 7px;
+    height: 7px;
+    margin: 2px 3px;
+}
+
+.main-slider .owl-theme .owl-dots button.active span {
+    background-color: var(--white_color);
+    opacity: 1;
+    width: 18px;
+}
+
+.main-slider .owl-carousel .owl-nav button {
+    position: absolute;
+    bottom: 35px;
+    right: 80px;
+    background-color: var(--white_color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-slider:hover .owl-carousel .owl-nav button {
+    opacity: 1;
+}
+
+.main-slider .owl-carousel .owl-nav button:hover {
+    background-color: var(--white_color);
+    color: var(--black-color);
+}
+
+.main-slider .owl-carousel .owl-nav button.owl-prev {
+    right: 35px;
+}
+
+.main-slider .owl-carousel .owl-nav button.owl-next {
+    right: 80px;
 }
