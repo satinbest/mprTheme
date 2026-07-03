@@ -432,7 +432,8 @@ li {
 .hero-prodct {
     margin-bottom: 50px;
 }
-.hero-prodct  .product-item {
+
+.hero-prodct .product-item {
     background-color: var(--white_color);
     border-radius: 15px;
     box-shadow: 0px 0px 10px 5px #00000008;
@@ -515,6 +516,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    margin-top: 15px;
 }
 
 .hero-prodct .product-item .down .addtocart_button a {
@@ -553,26 +555,51 @@ li {
     top: 14px;
     left: -25px;
 }
-.hero-prodct .amazing-slider{
+
+.hero-prodct .amazing-slider {
     background-color: var(--red-color);
     border-radius: 15px;
     box-shadow: 17px 17px 40px 0px #e5383b12;
 }
-.hero-prodct .amazing-slider .amazing-thumbnail img{
+
+.hero-prodct .amazing-slider .amazing-thumbnail img {
     max-width: 228px;
     margin: 15px auto;
 }
-.amazing-slider .amazing-btn{
+
+.amazing-slider .amazing-btn {
     text-align: center;
 }
-.amazing-slider .amazing-btn a{
+
+.amazing-slider .amazing-btn a {
     background-color: var(--white_color);
     border-radius: 24px;
     padding: 13px 29px;
     display: inline-flex;
     align-items: center;
 }
-.amazing-slider .amazing-btn a i{
+
+.amazing-slider .amazing-btn a i {
     font-size: 13px;
     margin-right: 3px;
+}
+.amazing-product .countdown-timer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.amazing-product .countdown-timer .number{
+    background-color: var(--red-color);
+    color: var(--white_color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.amazing-product .countdown-timer span.dot{
+    color: var(--red-color);
+    font-size: 24px;
+    margin: 0 2px;
 }
