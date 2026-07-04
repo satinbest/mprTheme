@@ -583,12 +583,14 @@ li {
     font-size: 13px;
     margin-right: 3px;
 }
-.amazing-product .countdown-timer{
+
+.amazing-product .countdown-timer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
 }
-.amazing-product .countdown-timer .number{
+
+.amazing-product .countdown-timer .number {
     background-color: var(--red-color);
     color: var(--white_color);
     width: 35px;
@@ -598,8 +600,20 @@ li {
     align-items: center;
     border-radius: 5px;
 }
-.amazing-product .countdown-timer span.dot{
+
+.amazing-product .countdown-timer span.dot {
     color: var(--red-color);
     font-size: 24px;
     margin: 0 2px;
+}
+
+.poster {
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
+    margin-bottom: 50px;
+}
+
+.poster img {
+    border-radius: 15px;
 }
