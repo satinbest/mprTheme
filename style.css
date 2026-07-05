@@ -622,6 +622,43 @@ li {
     margin-bottom: 50px;
 }
 
+.special-box {
+    position: relative;
+    padding: 0 30px 50px 0;
+
+}
+
+.special-box:before {
+    content: "";
+    background-color: var(--red-color);
+    width: 22%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.special-box:after {
+    content: "";
+    background-color: var(--red-color);
+    width: 38%;
+    position: absolute;
+    top: 0;
+    right: 7%;
+    bottom: 0;
+    border-radius: 30px;
+    transform: translate(-15%, 0) skew(-22deg, 0);
+    z-index: -1;
+}
+.special-box h4 {
+    font-size: 18px;
+    color: var(--white_color);
+    font-weight: 480;
+    padding: 25px 0;
+
+}
 .special-box .owl-stage-outer {
     background-color: var(--white_color);
     border: 1px solid #eaeaea;
@@ -633,7 +670,7 @@ li {
 .special-box .special-item {
     display: flex;
     padding: 25px;
-    width: 1025px;
+    width: 1003px;
     position: relative;
 }
 
