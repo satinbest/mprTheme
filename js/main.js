@@ -60,7 +60,25 @@ $(".amazing-slider").owlCarousel({
     },
   },
 });
-
+$(".special-slider").owlCarousel({
+  loop: false,
+  margin: 0,
+  mouseDrag:false,
+  nav: true,
+  rtl: true,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
 /***********timer Amazing***********/
 jQuery(document).ready(function (){
     function countdownTimer() {

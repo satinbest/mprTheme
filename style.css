@@ -617,3 +617,184 @@ li {
 .poster img {
     border-radius: 15px;
 }
+
+.hero-special {
+    margin-bottom: 50px;
+}
+
+.special-box .owl-stage-outer {
+    background-color: var(--white_color);
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 5px 10px 5px #00000008;
+    border-radius: 10px;
+    width: 71%;
+}
+
+.special-box .special-item {
+    display: flex;
+    padding: 25px;
+    width: 1025px;
+    position: relative;
+}
+
+.special-box .special-item figure {
+    width: 23.5%;
+}
+
+.special-box .special-item figure a img {
+    max-width: 247px;
+}
+
+.special-box .special-item .color {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.special-box .special-item .color ul li {
+    float: right;
+}
+
+.special-box .special-item .color ul li span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: right;
+    border-radius: 50%;
+    margin-left: 5px;
+    position: relative;
+}
+
+.special-box .special-item .color ul li span:hover>b {
+    visibility: visible;
+    opacity: 1;
+    bottom: 17px;
+}
+
+.special-box .special-item .color ul li span b {
+    background-color: var(--text-color);
+    color: var(--white_color);
+    font-size: 13px;
+    font-weight: 100;
+    border-radius: 4px;
+    padding: 2px 4px;
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.special-box .special-item .det-special h2 {
+    font-weight: 650;
+    font-size: 22px;
+    margin-bottom: 19px;
+}
+
+.special-box .special-item .det-special {
+    width: 73.5%;
+}
+
+.special-box .special-item .det-special .addition-product {
+    display: flex;
+    flex-direction: column;
+    max-height: 144px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 450;
+    gap: 7px 0;
+    margin: 0 10px 30px 0;
+}
+
+.special-box .special-item .det-special .addition-product .property-iten {
+    display: flex;
+    gap: 5px;
+}
+
+.special-box .special-item .det-special .addition-product .property-iten span {
+    font-weight: 500;
+}
+
+.special-box .special-item .det-special .addition-product .property-iten i {
+    color: var(--red-color);
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.special-box .special-item .det-special .down {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.special-box .special-item .det-special .down a {
+    background-color: var(--green-color);
+    color: var(--white_color);
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.special-box .special-item .det-special .down .price {
+    display: flex;
+    gap: 10px;
+
+}
+
+.special-box .special-item .det-special .down .price del {
+    color: #7e7e7e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.special-box .special-item .det-special .down .price ins {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.special-box .special-item .det-special .down .price ins span {
+    font-size: 14px;
+}
+
+.special-box .special-item .discount {
+    position: absolute;
+    background-color: #fdc830;
+    left: 15px;
+    top: 0;
+    width: 65px;
+    height: 72px;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.special-box .special-item .discount b {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.special-box .special-item .det-special .down .countdown-timer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.special-box .special-item .det-special .down .number {
+    background-color: var(--red-color);
+    color: var(--white_color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.special-box .special-item .det-special .down .countdown-timer span.dot {
+    color: var(--red-color);
+    font-size: 24px;
+    margin: 0 2px;
+}
