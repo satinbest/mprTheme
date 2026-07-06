@@ -190,7 +190,9 @@ li {
     color: #161A1D;
     font-weight: 450;
 }
-
+.megamenu-box .t-m span{
+    cursor: pointer;
+}
 .main-menu .menu-header>ul>li {
     display: inline-block;
     margin: 0 11px;
