@@ -63,9 +63,10 @@ $(".amazing-slider").owlCarousel({
 $(".special-slider").owlCarousel({
   loop: false,
   margin: 0,
-  mouseDrag:false,
-  nav: true,
+  dots:true,
+  nav: false,
   rtl: true,
+  dotsData:true,
   autoplay: false,
   responsive: {
     0: {
