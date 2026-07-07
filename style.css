@@ -190,9 +190,11 @@ li {
     color: #161A1D;
     font-weight: 450;
 }
-.megamenu-box .t-m span{
+
+.megamenu-box .t-m span {
     cursor: pointer;
 }
+
 .main-menu .menu-header>ul>li {
     display: inline-block;
     margin: 0 11px;
@@ -911,14 +913,16 @@ li {
 .box-sell {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .box-sell .best-sell {
-    background-color: var(--red-color);
+    background: var(--red-color);
     border-radius: 15px;
     padding: 15px 24px 30px;
     width: 275px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .box-sell .best-sell .head {
@@ -929,8 +933,8 @@ li {
 
 .box-sell .best-sell .head div {
     display: flex;
-    gap: 8px;
     align-items: center;
+    gap: 8px;
 }
 
 .box-sell .best-sell .head span {
@@ -940,16 +944,16 @@ li {
 
 .box-sell .best-sell figure {
     border-radius: 50%;
+    background: var(--white_color);
     width: 170px;
     height: 170px;
     margin: 25px auto;
     padding: 15px;
     overflow: hidden;
-    background-color: var(--white_color);
-    animation: pulse-black 1.5s infinite;
+    animation: pulse-white 1.5s infinite;
 }
 
-@keyframes pulse-black {
+@keyframes pulse-white {
     0% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
@@ -957,7 +961,7 @@ li {
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
     }
 
     100% {
@@ -970,7 +974,7 @@ li {
     max-width: 140px;
     margin: auto;
     display: block;
-
+    border-radius: 40px;
 }
 
 .box-sell .best-sell h2 {
@@ -980,29 +984,33 @@ li {
 }
 
 .box-sell .best-sell h2 a {
-    color: var(--white_color);
     font-size: 14px;
+    color: var(--white_color);
     font-weight: 450;
 }
 
 .box-sell .best-sell .price {
     display: flex;
     gap: 10px;
+    color: var(--white_color);
     justify-content: space-between;
     margin: 13px 0;
+    ;
 }
 
 .box-sell .best-sell .price del {
-    color: var(--white_color);
     font-size: 14px;
     font-weight: 400;
 }
 
 .box-sell .best-sell .price ins {
-    text-decoration: none;
     font-size: 18px;
     font-weight: 700;
-    color: var(--white_color);
+    text-decoration: none;
+}
+
+.box-sell .best-sell .price ins span {
+    font-size: 14px;
 }
 
 .box-sell .best-sell .add-cart {
@@ -1011,10 +1019,103 @@ li {
     left: 106px;
 }
 
-.box-sell .best-sell .add-cart a i {
+.box-sell .best-sell .add-cart i {
     font-size: 40px;
-    background-color: var(--white_color);
-    border-radius: 50%;
+    background: var(--white_color);
     color: var(--red-color);
+    border-radius: 50%;
     border: 12px solid var(--white_color);
+}
+
+.other-sell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.other-sell .product-item {
+    background: var(--white_color);
+    box-shadow: 0px 0px 10px 5px #00000008;
+    border-radius: 15px;
+    padding: 15px;
+    flex-grow: 1;
+    height: 125px;
+}
+
+.other-sell .product-item:hover .down .number {
+    background: var(--red-color);
+    color: var(--white_color);
+}
+
+.other-sell .product-item figure {
+    float: right;
+    margin-left: 5px;
+}
+
+.other-sell .product-item figure img {
+    max-width: 90px;
+}
+
+.other-sell .product-item h2 {
+    line-height: 23px;
+    height: 45px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.other-sell .product-item h2 a {
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.other-sell .product-item .down {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: end;
+}
+
+.other-sell .product-item .down .number {
+    background: #ECF0F1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #95A5A6;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.other-sell .product-item .down .price {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 10px;
+    align-items: baseline;
+}
+
+.other-sell .product-item .down .price del {
+    color: #7E7E7E;
+}
+
+.other-sell .product-item .down .price ins {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 725;
+    text-decoration: none;
+}
+
+.other-sell .product-item .down .price ins span {
+    font-size: 12px;
+    color: #D7DBE2;
+    font-weight: 500;
+    rotate: 270deg;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: -25px;
 }
