@@ -1319,7 +1319,7 @@ li {
     height: 52px;
     top: 60px;
     color: #fff;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
 }
 .box-brand .owl-carousel .owl-nav button:hover{
     background-color: var(--white_color);
@@ -1341,4 +1341,25 @@ li {
 .box-brand .owl-carousel .owl-nav button.owl-next::before {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
+}
+.mprthem-service{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.mprthem-service .srvice-item{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+.mprthem-service .srvice-item img{
+    max-width: 72px;
+    margin: 0 auto 10px;
+}
+.mprthem-service .srvice-item span{
+    font-weight: 300;
+    font-size: 13px;
+    color: #7e7e7e;
 }
