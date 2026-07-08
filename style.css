@@ -1249,3 +1249,25 @@ li {
     border-radius: 5px;
     margin-left: 5px;
 }
+.box-insta {
+    display: flex;
+    background: #F93423;
+    box-shadow: 0px 4px 40px 0px #E5383B12;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+.box-insta .first-item {
+    width: 15.2%;
+    margin: 0 10px;
+}
+.box-insta .left-item {
+    width: 84.8%;
+}
+.box-insta .product-item {
+    background: none;
+    margin: 0 5px;
+    padding: 0;
+}
+.box-insta .product-item figure img {
+    border-radius: 15px;
+}

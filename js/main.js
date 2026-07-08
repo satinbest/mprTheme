@@ -80,6 +80,25 @@ $(".special-slider").owlCarousel({
     },
   },
 });
+$(".insta-slider").owlCarousel({
+  loop: true,
+  margin: 0,
+  dots:false,
+  nav: false,
+  rtl: true,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 6,
+    },
+  },
+});
 /***********timer Amazing***********/
 jQuery(document).ready(function (){
     function countdownTimer() {
