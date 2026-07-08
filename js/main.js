@@ -92,7 +92,30 @@ $(".insta-slider").owlCarousel({
       items: 1,
     },
     600: {
+      items: 6,
+    },
+    1000: {
+      items: 6,
+    },
+  },
+});
+$(".brand-slider").owlCarousel({
+  loop: true,
+  margin: 0,
+  dots:false,
+  nav: true,
+  rtl: true,
+  autoplay: false,
+    navText: [
+    "<i class='fa-solid fa-chevron-right'></i>",
+    "<i class='fa-solid fa-chevron-left'></i>",
+  ],
+  responsive: {
+    0: {
       items: 1,
+    },
+    600: {
+      items: 6,
     },
     1000: {
       items: 6,
