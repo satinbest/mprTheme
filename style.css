@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -29,6 +31,16 @@ body {
     font-family: var(--font-family);
     font-weight: 400;
 }
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    font-family: var(--font-family);
+}
+
 
 a {
     transition: all 0.2s ease-in-out;
@@ -1440,17 +1452,20 @@ footer {
     display: flex;
     gap: 20px;
 }
-.application .left a{
+
+.application .left a {
     display: flex;
 }
-.footer-line{
+
+.footer-line {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
     color: #7E7E7E;
 }
-.footer-line .left span{
+
+.footer-line .left span {
     border: 1px solid var(--border-color);
     padding: 6px 13px;
     border-radius: 7px;
@@ -1459,16 +1474,149 @@ footer {
     gap: 7px;
     cursor: pointer;
 }
-.footer-down{
+
+.footer-down {
     display: flex;
     justify-content: space-between;
     color: #7e7e7e;
     padding: 20px 0;
 }
-.footer-down .social-footer{
+
+.footer-down .social-footer {
     display: flex;
     gap: 20px;
 }
-.footer-down .social-footer a{
+
+.footer-down .social-footer a {
     display: flex;
+}
+
+/* modal login */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 460px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.form-login-mprtheme .close {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.form-login-mprtheme .close:hover,
+.form-login-mprtheme .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* login form */
+.modal-content .form-login-mprtheme {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 100%;
+    padding: 45px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-content .form-login-mprtheme .logo {
+    max-width: 200px;
+    margin: 0 auto 35px;
+}
+
+.modal-content .form-login-mprtheme input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 18px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.modal-content .form-login-mprtheme button {
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--green-color);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.modal-content .form-login-mprtheme .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.modal-content .form-login-mprtheme .message a {
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+.modal-content .form-login-mprtheme .register-form {
+    display: none;
 }

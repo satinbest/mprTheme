@@ -300,11 +300,36 @@
           </nav>
           <div class="register-btn">
             <i class="far fa-circle-user"></i>
-            <span>ورود/ثبت نام</span>
+            <span id="btn_modal_login">ورود/ثبت نام</span>
           </div>
         </section>
       </div>
     </header>
+    <!-- The Modal -->
+    <div id="modal_login" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="form-login-mprtheme">
+          <i class="fa-solid fa-xmark close"></i>
+          <div class="logo">
+            <a href="#"> <img src="img/logo.png" /></a>
+          </div>
+          <form class="register-form">
+            <input type="email" placeholder="آدرس ایمیل" />
+            <input type="password" placeholder="رمز عبور" />
+            <button>ثبت نام</button>
+            <p class="message">حساب کاربری دارید؟ <a href="#">وارد شوید</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="آدرس ایمیل یا نام کاربری" />
+            <input type="password" placeholder="پسورد" />
+            <button>ورود</button>
+            <p class="message">کاربری جدید هستید؟ <a href="#">ثبت نام</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- slider -->
     <div class="container">
       <section class="main-slider">
