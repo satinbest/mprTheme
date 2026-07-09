@@ -1459,3 +1459,16 @@ footer {
     gap: 7px;
     cursor: pointer;
 }
+.footer-down{
+    display: flex;
+    justify-content: space-between;
+    color: #7e7e7e;
+    padding: 20px 0;
+}
+.footer-down .social-footer{
+    display: flex;
+    gap: 20px;
+}
+.footer-down .social-footer a{
+    display: flex;
+}
