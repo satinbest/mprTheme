@@ -1778,6 +1778,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .product-intro .right .p-q .quantity {
@@ -1798,8 +1799,8 @@ footer {
     border: none;
 }
 
-.product-intro .right .p-q .quantity .qty input.qty::-webkit-outer-spin-button,
-.product-intro .right .p-q .quantity .qty input.qty::-webkit-inner-spin-button {
+.product-intro .right .p-q .quantity input.qty::-webkit-outer-spin-button,
+.product-intro .right .p-q .quantity input.qty::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -1808,6 +1809,7 @@ footer {
     appearance: textfield;
     -moz-appearance: textfield;
 }
+
 .product-intro .right .p-q .quantity button {
     font-size: 20px;
     background-color: transparent;
@@ -1824,20 +1826,81 @@ footer {
 .product-intro .right .p-q .quantity button.minus {
     border-right: 1px solid var(--color-border);
 }
-.product-intro .right .p-q .single-price .price{
+
+.product-intro .right .p-q .single-price {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
-.product-intro .right .p-q .single-price .price del{
-    font-size: 16px;
-    font-weight: 700;
+
+.product-intro .right .p-q .single-price .price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.product-intro .right .p-q .single-price .price del {
+    font-size: 20px;
+    font-weight: 400;
     color: var(--color-gray);
 }
-.product-intro .right .p-q .single-price .price ins{
-    font-size: 18px;
+
+.product-intro .right .p-q .single-price .price ins {
+    font-size: 24px;
     font-weight: 700;
     text-decoration: none;
 }
-.product-intro .right .p-q .single-price .price ins span{
-    font-size: 14px;
+
+.product-intro .right .p-q .single-price .price ins span {
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.product-intro .right .p-q .single-price .bahareh {
+    --s: 50px;
+    width: var(--s);
+    aspect-ratio: 1;
+    --g: /calc(var(--s)*0.201) calc(var(--s)*0.201) radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
+    mask:
+        calc(50% + var(--s)*0.369) calc(50% + var(--s)*0) var(--g),
+        calc(50% + var(--s)*0.261) calc(50% + var(--s)*0.261) var(--g),
+        calc(50% + var(--s)*0) calc(50% + var(--s)*0.369) var(--g),
+        calc(50% + var(--s)*-0.261) calc(50% + var(--s)*0.261) var(--g),
+        calc(50% + var(--s)*-0.369) calc(50% + var(--s)*0) var(--g),
+        calc(50% + var(--s)*-0.261) calc(50% + var(--s)*-0.261) var(--g),
+        calc(50% + var(--s)*0) calc(50% + var(--s)*-0.369) var(--g),
+        calc(50% + var(--s)*0.261) calc(50% + var(--s)*-0.261) var(--g),
+        radial-gradient(calc(var(--s)*0.418), #000 99%, #0000 101%) subtract,
+        calc(50% + var(--s)*0.447) calc(50% + var(--s)*0.185) var(--g),
+        calc(50% + var(--s)*0.185) calc(50% + var(--s)*0.447) var(--g),
+        calc(50% + var(--s)*-0.185) calc(50% + var(--s)*0.447) var(--g),
+        calc(50% + var(--s)*-0.447) calc(50% + var(--s)*0.185) var(--g),
+        calc(50% + var(--s)*-0.447) calc(50% + var(--s)*-0.185) var(--g),
+        calc(50% + var(--s)*-0.185) calc(50% + var(--s)*-0.447) var(--g),
+        calc(50% + var(--s)*0.185) calc(50% + var(--s)*-0.447) var(--g),
+        calc(50% + var(--s)*0.447) calc(50% + var(--s)*-0.185) var(--g);
+    background-color: var(--color-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-weight: 450;
+    font-size: calc(var(--s) * 0.34);
+    position: relative;
+}
+
+.product-intro .right .single-add-to-cart {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 450;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.product-intro .right .single-add-to-cart i {
+    margin-left: 5px;
 }
