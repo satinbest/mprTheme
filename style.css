@@ -1773,3 +1773,71 @@ footer {
     font-size: 10px;
     color: var(--color-border);
 }
+
+.product-intro .right .p-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-intro .right .p-q .quantity {
+    display: flex;
+    border: 1px solid var(--color-border);
+    width: 200px;
+    height: 60px;
+    border-radius: var(--radius-sm);
+    align-items: center;
+}
+
+.product-intro .right .p-q .quantity .qty {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+.product-intro .right .p-q .quantity .qty input.qty::-webkit-outer-spin-button,
+.product-intro .right .p-q .quantity .qty input.qty::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product-intro .right .p-q .quantity .qty input.qty {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+.product-intro .right .p-q .quantity button {
+    font-size: 20px;
+    background-color: transparent;
+    padding: 0px 18px;
+    cursor: pointer;
+    border: none;
+    margin: 15px 0;
+}
+
+.product-intro .right .p-q .quantity button.plus {
+    border-left: 1px solid var(--color-border);
+}
+
+.product-intro .right .p-q .quantity button.minus {
+    border-right: 1px solid var(--color-border);
+}
+.product-intro .right .p-q .single-price .price{
+    display: flex;
+    gap: 10px;
+}
+.product-intro .right .p-q .single-price .price del{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-gray);
+}
+.product-intro .right .p-q .single-price .price ins{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.product-intro .right .p-q .single-price .price ins span{
+    font-size: 14px;
+}

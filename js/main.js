@@ -188,29 +188,53 @@ $(document).ready(function () {
 });
 
 // start modal-login
-$(document).ready(function (){
-    var modal_login = document.getElementById("modal_login");
-// Get the button that opens the modal
-    var btn_modal_login = document.getElementById("btn_modal_login");
-// Get the <span> element that closes the modal
-    var close = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal
-    btn_modal_login.onclick = function() {
-        modal_login.style.display = "block";
+$(document).ready(function () {
+  var modal_login = document.getElementById("modal_login");
+  // Get the button that opens the modal
+  var btn_modal_login = document.getElementById("btn_modal_login");
+  // Get the <span> element that closes the modal
+  var close = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal
+  btn_modal_login.onclick = function () {
+    modal_login.style.display = "block";
+  };
+  // When the user clicks on <span> (x), close the modal
+  close.onclick = function () {
+    modal_login.style.display = "none";
+  };
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal_login) {
+      modal_login.style.display = "none";
     }
-// When the user clicks on <span> (x), close the modal
-    close.onclick = function() {
-        modal_login.style.display = "none";
-    }
-// When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal_login) {
-            modal_login.style.display = "none";
-        }
-    }
-})
+  };
+});
 
 // end modal login
-$('.message a').click(function(){
-    $('.form-login-mprtheme form').animate({height: "toggle", opacity: "toggle"}, "slow");
+$(".message a").click(function () {
+  $(".form-login-mprtheme form").animate(
+    { height: "toggle", opacity: "toggle" },
+    "slow",
+  );
+});
+/************quantity number plus and minus************/
+$(document).on("click", "button.plus, button.minus", function () {
+  var qty = $(this).parent(".quantity").find(".qty");
+  var val = parseFloat(qty.val());
+  var max = parseFloat(qty.attr("max"));
+  var min = parseFloat(qty.attr("min"));
+  var step = parseFloat(qty.attr("step"));
+  if ($(this).is(".plus")) {
+    if (max && max <= val) {
+      qty.val(max).change();
+    } else {
+      qty.val(val + step).change();
+    }
+  } else {
+    if (min && min >= val) {
+      qty.val(min).change();
+    } else if (val > 1) {
+      qty.val(val - step).change();
+    }
+  }
 });
