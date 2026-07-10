@@ -14,15 +14,12 @@
 }
 
 :root {
-    /* === رنگ‌ها (نام واقعی) === */
     --color-red: #f93423;
     --color-green: #1BD2A3;
     --color-white: #fff;
     --color-black: #000;
     --color-text: #303030;
     --color-border: #ddd;
-
-    /* رنگ‌های خاکستری / محیطی */
     --color-gray: #7e7e7e;
     --color-gray-dark: #7a7a7a;
     --color-gray-light: #95A5A6;
@@ -32,8 +29,6 @@
     --color-overlay: #D7DBE2;
     --color-input: #f2f2f2;
     --color-input-icon: #a0a0a0;
-
-    /* رنگ‌های تأکیدی یکتا */
     --color-discount: #fdc830;
     --color-dot-active: #f2f2ff;
     --color-modal-bg: #fefefe;
@@ -48,22 +43,16 @@
     --color-shadow-bg: #ececec;
     --color-price-dark: #313131;
     --color-price-toman: #4d4d4d;
-
-    /* === تایپوگرافی === */
     --font-family: 'arad';
     --font-size-xs: 12px;
     --font-size-sm: 13px;
     --font-size-base: 14px;
     --font-size-lg: 18px;
-
-    /* === شعاع گوشه === */
     --radius-xs: 5px;
     --radius-sm: 7px;
     --radius-md: 10px;
     --radius-lg: 15px;
     --radius-pill: 50%;
-
-    /* === سایه‌ها === */
     --shadow-card: 0px 0px 10px 5px #00000008;
     --shadow-card-top: 0px 5px 10px 5px #00000008;
     --shadow-header: 0px 4px 10px 0px #0000000d;
@@ -71,8 +60,6 @@
     --shadow-blog-title: 4px 4px 25px 0px #38383840;
     --shadow-amazing: 17px 17px 40px 0px #e5383b12;
     --shadow-insta: 0px 4px 40px 0px #E5383B12;
-
-    /* === ترانزیشن === */
     --transition-base: all 0.2s ease-in-out;
     --transition-slow: all 0.3s ease-in-out;
     --transition-brand: all 0.5s ease-out;
@@ -1686,4 +1673,103 @@ footer {
 
 .modal-content .form-login-mprtheme .register-form {
     display: none;
+}
+
+/* single product style */
+
+.mprtheme-bredcrumb {
+    font-size: var(--font-size-sm);
+    margin: 20px 0;
+    color: var(--color-gray);
+}
+
+.mprtheme-bredcrumb a {
+    color: var(--color-gray);
+}
+
+.product-intro {
+    box-shadow: var(--shadow-brand);
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-intro .right {
+    width: 49%;
+}
+
+.product-intro .right header {
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.product-intro .right header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-intro .right header span {
+    color: var(--color-close-hover);
+    font-weight: 300;
+    margin-top: 5px;
+    display: block;
+}
+
+.product-intro .right .product-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-intro .right .product-meta .meta-pro {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 22px;
+}
+
+.product-intro .right .product-meta .meta-pro i {
+    color: var(--color-green);
+    font-size: 24px;
+    margin-left: 6px;
+}
+
+.product-intro .right .product-delivery {
+    display: flex;
+    gap: 10px 25px;
+    margin-bottom: 30px;
+    font-weight: 450;
+}
+
+.product-intro .right .product-delivery span i {
+    color: var(--color-red);
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.product-intro .right .addition-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+    max-height: 90px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.product-intro .right .addition-product .property-iten {
+    display: flex;
+    align-items: center;
+}
+
+.product-intro .right .addition-product .property-iten span {
+    color: var(--color-gray-dark);
+    font-weight: 300;
+}
+
+.product-intro .right .addition-product .property-iten span i {
+    font-size: 10px;
+    color: var(--color-border);
 }
