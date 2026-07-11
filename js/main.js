@@ -187,36 +187,44 @@ $(document).ready(function () {
   countdownTimer();
 });
 
-// start modal-login
-$(document).ready(function () {
-  var modal_login = document.getElementById("modal_login");
-  // Get the button that opens the modal
-  var btn_modal_login = document.getElementById("btn_modal_login");
-  // Get the <span> element that closes the modal
-  var close = document.getElementsByClassName("close")[0];
-  // When the user clicks the button, open the modal
-  btn_modal_login.onclick = function () {
-    modal_login.style.display = "block";
-  };
-  // When the user clicks on <span> (x), close the modal
-  close.onclick = function () {
-    modal_login.style.display = "none";
-  };
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    if (event.target == modal_login) {
-      modal_login.style.display = "none";
-    }
-  };
-});
 
-// end modal login
+
 $(".message a").click(function () {
   $(".form-login-mprtheme form").animate(
     { height: "toggle", opacity: "toggle" },
     "slow",
   );
 });
+
+
+$(function () {
+
+    function modal(btnId, modalId, closeClass){
+
+        const modal = document.getElementById(modalId);
+
+        document.getElementById(btnId).onclick = function(){
+            modal.style.display = "block";
+        };
+
+        document.querySelector("." + closeClass).onclick = function(){
+            modal.style.display = "none";
+        };
+
+        window.addEventListener("click", function(e){
+            if(e.target === modal){
+                modal.style.display = "none";
+            }
+        });
+
+    }
+
+    modal("btn_modal_login","modal_login","close");
+    modal("btn_modal_video","modal_video","close_video");
+    modal("btn_modal_share","modal_share","close_share");
+
+});
+
 /************quantity number plus and minus************/
 $(document).on("click", "button.plus, button.minus", function () {
   var qty = $(this).parent(".quantity").find(".qty");

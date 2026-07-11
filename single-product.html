@@ -337,6 +337,89 @@
       </div>
     </div>
 
+    <!-- The Modal video -->
+    <div id="modal_video" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fa-solid fa-xmark close_video"></i>
+          <h4>ویدیو محصول</h4>
+        </div>
+        <div class="modal-body">
+          <video controls>
+            <source
+              src="./img/video.webm"
+              type="video/webm"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal share -->
+    <div id="modal_share" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fa-solid fa-xmark close_share"></i>
+          <h4>اشتراک گذاری محصول</h4>
+        </div>
+        <div class="modal-body">
+          <div class="shortlink">
+            <span><i class="fa-solid fa-link"></i> لینک کوتاه محصول </span>
+            <textarea readonly>https://mprtheme.local</textarea>
+          </div>
+          <div class="social-sharing">
+            <p>به اشتراک بگذارید:</p>
+            <div class="box-sharing">
+              <a
+                href="https://t.me/share/url?url=https://example.com/my-post&text=آموزش وردپرس"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="telegram"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+
+              <a
+                href="https://wa.me/?text=آموزش وردپرس%20https://example.com/my-post"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="whatsapp"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/intent/tweet?url=https://example.com/my-post&text=آموزش وردپرس"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="x"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.com/my-post"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/my-post"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="facebook"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <section class="product-intro">
         <div class="right">
@@ -476,11 +559,11 @@
             </div>
             <div class="item-action">
               <button>
-                <i class="fa-solid fa-share-alt"></i>
+                <i class="fa-solid fa-share-alt" id="btn_modal_share"></i>
                 <span>اشراک گذاری محصول</span>
               </button>
             </div>
-            <div class="item-action">
+            <div class="item-action" id="btn_modal_video">
               <button>
                 <i class="fa-regular fa-circle-play"></i>
                 <span>ویدیو محصول</span>
@@ -502,6 +585,7 @@
         </div>
       </section>
     </div>
+
     <!-- footer -->
     <footer>
       <div class="container">
