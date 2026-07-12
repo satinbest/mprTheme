@@ -2103,3 +2103,43 @@ footer {
 .modal-body .social-sharing .box-sharing a.facebook {
     color: #1877F2;
 }
+
+.product-tab .product-description {
+    line-height: 2.5;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.product-tab .addition-product {
+    margin-bottom: 70px;
+}
+
+.product-tab .addition-product h2 {
+    margin-bottom: 20px;
+}
+
+.product-tab .addition-product .property-iten {
+    display: flex;
+    gap: 10px;
+    font-weight: 450;
+}
+
+.product-tab .addition-product .property-iten span {
+    background-color: var(--color-border-light);
+    padding: 20px 10px;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.product-tab .addition-product .property-iten span i {
+    color: var(--color-red);
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.product-tab .addition-product .property-iten p {
+    background-color: var(--color-surface-alt);
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
