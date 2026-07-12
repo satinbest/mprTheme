@@ -215,32 +215,45 @@ $(".message a").click(function () {
   );
 });
 
-
 $(function () {
 
-    function modal(btnId, modalId, closeClass){
+    const modals = [];
 
+    function modal(btnId, modalId, closeClass) {
+
+        const btn = document.getElementById(btnId);
         const modal = document.getElementById(modalId);
+        const close = document.querySelector("." + closeClass);
 
-        document.getElementById(btnId).onclick = function(){
+        // اگر هر کدام از المان‌ها وجود نداشت، تابع متوقف شود
+        if (!btn || !modal || !close) {
+            return;
+        }
+
+        modals.push(modal);
+
+        btn.addEventListener("click", function () {
             modal.style.display = "block";
-        };
+        });
 
-        document.querySelector("." + closeClass).onclick = function(){
+        close.addEventListener("click", function () {
             modal.style.display = "none";
-        };
+        });
+    }
 
-        window.addEventListener("click", function(e){
-            if(e.target === modal){
+    // تعریف مودال‌ها
+    modal("btn_modal_login", "modal_login", "close");
+    modal("btn_modal_video", "modal_video", "close_video");
+    modal("btn_modal_share", "modal_share", "close_share");
+
+    // فقط یک Event Listener برای بستن مودال‌ها با کلیک بیرون از آن‌ها
+    window.addEventListener("click", function (e) {
+        modals.forEach(function (modal) {
+            if (e.target === modal) {
                 modal.style.display = "none";
             }
         });
-
-    }
-
-    modal("btn_modal_login","modal_login","close");
-    modal("btn_modal_video","modal_video","close_video");
-    modal("btn_modal_share","modal_share","close_share");
+    });
 
 });
 
