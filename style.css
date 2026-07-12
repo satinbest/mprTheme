@@ -2048,7 +2048,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-border-soft);
+    background-color: var(--color-surface-alt);
     border-radius: var(--radius-xs);
     padding: 10px;
     font-size: 13px;
@@ -2142,4 +2142,84 @@ footer {
     padding: 20px 10px;
     margin-bottom: 10px;
     flex-grow: 1;
+}
+
+.mprtheme-cross-sell {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.mprtheme-cross-sell .cross-item {
+    width: 33%;
+    height: 160px;
+    box-shadow: var(--shadow-card);
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.mprtheme-cross-sell .cross-item figure {
+    float: right;
+    margin-left: 5px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.mprtheme-cross-sell .cross-item figure a img {
+    max-width: 135px;
+}
+
+.mprtheme-cross-sell .cross-item h2 {
+    height: 45px;
+    line-height: 23px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.mprtheme-cross-sell .cross-item h2 {
+    font-size: 15px;
+    font-weight: 450;
+}
+
+.mprtheme-cross-sell .cross-item .down {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    align-items: end;
+}
+
+.mprtheme-cross-sell .cross-item .down .addtocart_button a {
+    color: var(--color-green);
+    font-size: 34px;
+    display: flex;
+}
+
+.mprtheme-cross-sell .cross-item .down .price {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 10px;
+    align-items: flex-end;
+}
+
+.mprtheme-cross-sell .cross-item .down .price del {
+    color: var(--color-gray);
+}
+
+.mprtheme-cross-sell .cross-item .down .price ins {
+    font-size: var(--font-size-lg);
+    color: var(--color-price-dark);
+    font-weight: 720;
+    text-decoration: none;
+}
+
+.mprtheme-cross-sell .cross-item .down .price ins span {
+    font-size: var(--font-size-xs);
+    color: var(--color-price-toman);
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    rotate: 270deg;
+    top: 14px;
+    left: -25px;
 }
