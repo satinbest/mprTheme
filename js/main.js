@@ -122,6 +122,25 @@ $(".brand-slider").owlCarousel({
     },
   },
 });
+$(".related-slider").owlCarousel({
+  loop: false,
+  margin: 0,
+  dots: false,
+  nav: false,
+  rtl: true,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 6,
+    },
+    1000: {
+      items: 6,
+    },
+  },
+});
 /***********timer Amazing***********/
 $(document).ready(function () {
   function countdownTimer() {

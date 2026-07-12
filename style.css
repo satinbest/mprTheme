@@ -1916,6 +1916,27 @@ footer {
     padding: 20px;
 }
 
+.product-intro .left .product-image .countdown-timer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.product-intro .left .product-image .countdown-timer .number {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-xs);
+}
+.product-intro .left .product-image .countdown-timer span.dot{
+    color: var(--color-red);
+    font-size: 24px;
+    margin: 0 2px;
+}
 .product-intro .left:before {
     content: '';
     position: absolute;
