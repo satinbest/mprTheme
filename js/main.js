@@ -154,7 +154,7 @@ $(".related-article-slider").owlCarousel({
       items: 1,
     },
     600: {
-      items: 6,
+      items: 4,
     },
     1000: {
       items: 4,
