@@ -83,8 +83,28 @@ option {
     font-family: var(--font-family);
 }
 
-button {
+button,
+input[type="submit"] {
     border: none;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+textarea {
+    background: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    height: 48px;
+    font-family: var(--font-family);
 }
 
 a {
