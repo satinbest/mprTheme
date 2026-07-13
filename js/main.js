@@ -141,6 +141,26 @@ $(".related-slider").owlCarousel({
     },
   },
 });
+$(".related-article-slider").owlCarousel({
+  loop: false,
+  margin: 0,
+  mouseDrag: false,
+  dots: false,
+  nav: false,
+  rtl: true,
+  autoplay: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 6,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
 /***********timer Amazing***********/
 $(document).ready(function () {
   function countdownTimer() {
@@ -206,8 +226,6 @@ $(document).ready(function () {
   countdownTimer();
 });
 
-
-
 $(".message a").click(function () {
   $(".form-login-mprtheme form").animate(
     { height: "toggle", opacity: "toggle" },
@@ -216,45 +234,42 @@ $(".message a").click(function () {
 });
 
 $(function () {
+  const modals = [];
 
-    const modals = [];
+  function modal(btnId, modalId, closeClass) {
+    const btn = document.getElementById(btnId);
+    const modal = document.getElementById(modalId);
+    const close = document.querySelector("." + closeClass);
 
-    function modal(btnId, modalId, closeClass) {
-
-        const btn = document.getElementById(btnId);
-        const modal = document.getElementById(modalId);
-        const close = document.querySelector("." + closeClass);
-
-        // اگر هر کدام از المان‌ها وجود نداشت، تابع متوقف شود
-        if (!btn || !modal || !close) {
-            return;
-        }
-
-        modals.push(modal);
-
-        btn.addEventListener("click", function () {
-            modal.style.display = "block";
-        });
-
-        close.addEventListener("click", function () {
-            modal.style.display = "none";
-        });
+    // اگر هر کدام از المان‌ها وجود نداشت، تابع متوقف شود
+    if (!btn || !modal || !close) {
+      return;
     }
 
-    // تعریف مودال‌ها
-    modal("btn_modal_login", "modal_login", "close");
-    modal("btn_modal_video", "modal_video", "close_video");
-    modal("btn_modal_share", "modal_share", "close_share");
+    modals.push(modal);
 
-    // فقط یک Event Listener برای بستن مودال‌ها با کلیک بیرون از آن‌ها
-    window.addEventListener("click", function (e) {
-        modals.forEach(function (modal) {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
-        });
+    btn.addEventListener("click", function () {
+      modal.style.display = "block";
     });
 
+    close.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+  }
+
+  // تعریف مودال‌ها
+  modal("btn_modal_login", "modal_login", "close");
+  modal("btn_modal_video", "modal_video", "close_video");
+  modal("btn_modal_share", "modal_share", "close_share");
+
+  // فقط یک Event Listener برای بستن مودال‌ها با کلیک بیرون از آن‌ها
+  window.addEventListener("click", function (e) {
+    modals.forEach(function (modal) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
 });
 
 /************quantity number plus and minus************/

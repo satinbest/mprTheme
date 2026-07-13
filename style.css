@@ -2290,30 +2290,36 @@ footer {
     color: var(--color-gray);
     margin-bottom: 20px;
 }
-.hero-single .main-single .post-single .box-pm a{
-        color: var(--color-gray);
+
+.hero-single .main-single .post-single .box-pm a {
+    color: var(--color-gray);
 }
-.hero-single .main-single .post-single figure{
+
+.hero-single .main-single .post-single figure {
     text-align: center;
     margin-bottom: 20px;
 }
-.hero-single .main-single .post-single .content-single{
+
+.hero-single .main-single .post-single .content-single {
     line-height: 2.5;
     font-size: 15px;
     text-align: justify;
     margin-bottom: 20px;
 }
-.hero-single .main-single .post-single .post-tag{
+
+.hero-single .main-single .post-single .post-tag {
     display: flex;
     align-items: center;
     gap: 8px;
     border-top: 1px solid var(--color-overlay);
     padding-top: 20px;
 }
-.hero-single .main-single .post-single .post-tag span i{
+
+.hero-single .main-single .post-single .post-tag span i {
     margin-left: 5px;
 }
-.hero-single .main-single .post-single .post-tag a{
+
+.hero-single .main-single .post-single .post-tag a {
     background-color: var(--color-border-soft);
     color: var(--color-gray);
     padding: 4px 12px;
@@ -2321,6 +2327,45 @@ footer {
     font-size: 14px;
     font-weight: 350;
 }
-.hero-single .main-single .post-single .post-tag a:hover{
+
+.hero-single .main-single .post-single .post-tag a:hover {
     color: var(--color-price-dark);
+}
+
+.related-head h4 {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 15px;
+}
+
+.related-item {
+    box-shadow: 0px 4px 85px 0px #D3D3D340;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #d5d5d544;
+    margin: 20px 8px;
+    height: 315px;
+}
+
+.related-item figure img {
+    border-radius: 15px;
+}
+
+.related-item h2 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
+    height: 40px;
+    font-weight: 500;
+}
+
+.related-item .down {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    background: #F5F5F5;
+    padding: 7px 10px;
+    color: #757575;
+    font-size: 13px;
 }
