@@ -2422,20 +2422,249 @@ footer {
     padding: 10px 15px;
     line-height: 2;
 }
-.side-single .widget .widget-header ul li{
+
+.side-single .widget .widget-header ul li {
     border-bottom: 1px solid var(--color-surface-alt);
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
-.side-single .widget .widget-header ul li a:hover{
+
+.side-single .widget .widget-header ul li a:hover {
     color: var(--color-red);
 }
-.side-single .widget .widget-header ul li:last-child{
+
+.side-single .widget .widget-header ul li:last-child {
     border-bottom: none;
 }
-.side-single .widget .widget-header ul li span.post-date{
+
+.side-single .widget .widget-header ul li span.post-date {
     font-size: 13px;
     color: var(--color-close-hover);
     display: block;
     margin-top: 4px;
+}
+
+/* style insta page */
+.single-insta {
+    position: relative;
+    background: var(--color-divider);
+    margin: -20px 0 0 0;
+    padding: 56px 0 60px;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.single-insta::before {
+    content: "";
+    position: absolute;
+    inset-inline-end: -140px;
+    top: -160px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle at center,
+            rgba(240, 148, 51, .20), rgba(220, 39, 67, .12) 45%, transparent 70%);
+    filter: blur(10px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.single-insta .container {
+    position: relative;
+    z-index: 1;
+}
+
+.single-insta .hero-insta {
+    display: flex;
+    align-items: stretch;
+    gap: 28px;
+    padding: 30px 0;
+}
+
+
+.single-insta .hero-insta .right {
+    position: relative;
+    width: 68%;
+    border-radius: 22px;
+    padding: 6px;
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .65);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.single-insta .hero-insta .right:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 32px 70px -20px rgba(0, 0, 0, .75);
+}
+
+.single-insta .hero-insta .right video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 650px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 17px;
+    background: #000;
+}
+
+.single-insta .hero-insta .right video:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 3px;
+}
+
+/* بج کوچک دوربین روی گوشه‌ی قاب ویدیو، فقط تزئینی */
+.single-insta .hero-insta .right::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .4), 0 0 0 4px var(--color-divider);
+    background-image:
+        linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='7' width='20' height='13' rx='3'/%3E%3Ccircle cx='12' cy='13.5' r='3.6'/%3E%3Cpath d='M8 7l1.4-2.6h5.2L16 7'/%3E%3C/svg%3E");
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover, 20px 20px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+.single-insta .hero-insta .left {
+    position: relative;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    background: linear-gradient(180deg, rgba(255, 255, 255, .035), rgba(255, 255, 255, 0) 40%);
+    border: 1px solid var(--color-surface);
+    border-radius: 22px;
+    padding: 26px 22px;
+    overflow: hidden;
+}
+
+/* نوار باریک رنگی بالای کارت، هماهنگ با قاب ویدیو */
+.single-insta .hero-insta .left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.single-insta .hero-insta .left h1 {
+    margin: 6px 0 16px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.6;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-surface);
+}
+
+.single-insta .hero-insta .left p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 2;
+    color: var(--color-surface-alt);
+}
+
+.single-insta .hero-insta .left a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 18px;
+    color: var(--color-green);
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    position: relative;
+}
+
+.single-insta .hero-insta .left a::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-inline-start: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform .25s ease;
+}
+
+.single-insta .hero-insta .left a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background: var(--color-green);
+    transition: width .25s ease;
+}
+
+.single-insta .hero-insta .left a:hover::before {
+    width: 100%;
+}
+
+.single-insta .hero-insta .left a:hover::after {
+    transform: rotate(45deg) translate(-2px, 2px);
+}
+
+.single-insta .hero-insta .left a:focus-visible {
+    outline: 2px solid var(--color-green);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 860px) {
+    .single-insta .hero-insta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .single-insta .hero-insta .right,
+    .single-insta .hero-insta .left {
+        width: 100%;
+    }
+
+    .single-insta .hero-insta .right video {
+        max-height: 420px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .single-insta .hero-insta .right,
+    .single-insta .hero-insta .left a::after {
+        transition: none;
+    }
+}
+
+#box-insta-single {
+    background-color: rgba(255, 255, 255, .035);
+}
+
+.single-insta h4.title-insta-single {
+    color: var(--color-white);
+    font-weight: 450;
+    font-size: 18px;
+    margin: 20px 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.single-insta h4.title-insta-single i {
+    font-size: 28px;
+    color: transparent;
+    background: linear-gradient(90deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
