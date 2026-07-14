@@ -2422,12 +2422,17 @@ footer {
     padding: 10px 15px;
     line-height: 2;
 }
+<<<<<<< HEAD
 
 .side-single .widget .widget-header ul li {
+=======
+.side-single .widget .widget-header ul li{
+>>>>>>> 6fa75ff194cde3fa65e329ed3330aef97996460d
     border-bottom: 1px solid var(--color-surface-alt);
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
+<<<<<<< HEAD
 
 .side-single .widget .widget-header ul li a:hover {
     color: var(--color-red);
@@ -2438,10 +2443,20 @@ footer {
 }
 
 .side-single .widget .widget-header ul li span.post-date {
+=======
+.side-single .widget .widget-header ul li a:hover{
+    color: var(--color-red);
+}
+.side-single .widget .widget-header ul li:last-child{
+    border-bottom: none;
+}
+.side-single .widget .widget-header ul li span.post-date{
+>>>>>>> 6fa75ff194cde3fa65e329ed3330aef97996460d
     font-size: 13px;
     color: var(--color-close-hover);
     display: block;
     margin-top: 4px;
+<<<<<<< HEAD
 }
 
 /* style insta page */
@@ -2667,4 +2682,6 @@ footer {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+=======
+>>>>>>> 6fa75ff194cde3fa65e329ed3330aef97996460d
 }
