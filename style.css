@@ -2294,15 +2294,14 @@ footer {
 }
 
 .hero-single .main-single .post-single header,
-.hero-single .main-single-page .post-single header{
+.hero-single .main-single-page .post-single header {
     border-bottom: 1px solid var(--color-surface-alt);
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 
 .hero-single .main-single .post-single header h1,
-.hero-single .main-single-page .post-single header h1
- {
+.hero-single .main-single-page .post-single header h1 {
     font-size: 24px;
     font-weight: 600;
 }
@@ -2673,4 +2672,14 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-/* page style */
+/* page shop style */
+.hero-archive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero-archive .product-item {
+    width: 23.5%;
+    margin: 0;
+}
