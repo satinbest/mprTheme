@@ -2283,7 +2283,8 @@ footer {
     width: 22%;
 }
 
-.hero-single .main-single .post-single {
+.hero-single .main-single .post-single,
+.hero-single .main-single-page .post-single {
     border-radius: var(--radius-md);
     background-color: var(--color-white);
     box-shadow: var(--shadow-brand);
@@ -2292,13 +2293,16 @@ footer {
     margin-bottom: 30px;
 }
 
-.hero-single .main-single .post-single header {
+.hero-single .main-single .post-single header,
+.hero-single .main-single-page .post-single header{
     border-bottom: 1px solid var(--color-surface-alt);
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 
-.hero-single .main-single .post-single header h1 {
+.hero-single .main-single .post-single header h1,
+.hero-single .main-single-page .post-single header h1
+ {
     font-size: 24px;
     font-weight: 600;
 }
@@ -2428,13 +2432,16 @@ footer {
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
-.side-single .widget .widget-header ul li a:hover{
+
+.side-single .widget .widget-header ul li a:hover {
     color: var(--color-red);
 }
-.side-single .widget .widget-header ul li:last-child{
+
+.side-single .widget .widget-header ul li:last-child {
     border-bottom: none;
 }
-.side-single .widget .widget-header ul li span.post-date{
+
+.side-single .widget .widget-header ul li span.post-date {
     font-size: 13px;
     color: var(--color-close-hover);
     display: block;
@@ -2665,3 +2672,5 @@ footer {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* page style */
