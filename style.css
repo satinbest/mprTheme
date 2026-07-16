@@ -107,6 +107,19 @@ textarea {
     font-family: var(--font-family);
 }
 
+.button {
+    background: #f93423;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
 a {
     transition: var(--transition-base);
     text-decoration: none;
@@ -150,6 +163,22 @@ li {
     color: var(--color-gray);
     font-size: var(--font-size-sm);
     font-weight: 350;
+}
+
+.top-header .t-h-right .bullet-notice {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-green);
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 6px;
+    animation: on-off 1s infinite;
+}
+
+@keyframes on-off {
+    50% {
+        opacity: 0;
+    }
 }
 
 .top-header .t-h-left .contact-header {
@@ -2682,4 +2711,27 @@ footer {
 .hero-archive .product-item {
     width: 23.5%;
     margin: 0;
+}
+
+.page-not-found {
+    width: 60%;
+    margin: auto;
+}
+
+.page-not-found .btn404 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-not-found .btn404 p {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.page-not-found .wrapper{
+    text-align: center;
+}
+.page-not-found .wrapper svg{
+    height: 400px;
+    
 }
