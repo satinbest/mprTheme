@@ -2728,10 +2728,67 @@ footer {
     font-weight: 900;
     margin: 20px 0;
 }
-.page-not-found .wrapper{
+
+.page-not-found .wrapper {
     text-align: center;
 }
-.page-not-found .wrapper svg{
+
+.page-not-found .wrapper svg {
     height: 400px;
-    
+
+}
+
+/* style floating button */
+.floating-button {
+    font-size: 34px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.floating-button i {
+    transition: all .2s ease-in-out;
+}
+
+.floating-button i.is-open {
+    transform: rotate(180deg);
+}
+
+.floating-contact .contact-list {
+    width: 280px;
+    position: fixed;
+    right: 40px;
+    bottom: 120px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ddd;
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 100;
+    display: none;
+}
+
+.floating-contact .contact-list a {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.floating-contact .contact-list a:hover {
+    background: #f3f4f6;
+}
+
+.floating-contact .contact-list a img {
+    width: 35px;
+    height: 35px;
 }

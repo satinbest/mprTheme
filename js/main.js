@@ -293,3 +293,22 @@ $(document).on("click", "button.plus, button.minus", function () {
     }
   }
 });
+// floating
+$(document).ready(function () {
+  const $icon = $(".floating-button i");
+  const $contactList = $(".contact-list");
+
+  $icon.on("click", function () {
+    const opening = !$icon.hasClass("is-open");
+
+    $contactList.slideToggle();
+    $icon.toggleClass("is-open fa-multiply", opening);
+    $icon.toggleClass("fa-comment-dots", !opening);
+    $icon.closest(".floating-button").attr("aria-expanded", opening);
+  });
+});
+
+// scrollup
+$("#scrollup").click(function () {
+  $("html").animate({ scrollTop: 0 }, 1000);
+});
