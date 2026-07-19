@@ -4,3 +4,9 @@
 .idea/
 # Visual Studio
 .vs/
+# Video files
+*.webm
+# img files
+*.webp
+*.avif
+*.png

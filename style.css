@@ -2792,3 +2792,8 @@ footer {
     width: 35px;
     height: 35px;
 }
+/* style story */
+.stories.carousel{
+    display: flex;
+    justify-content: center;
+}
